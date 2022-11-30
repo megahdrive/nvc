@@ -11,7 +11,7 @@ NVC controls your versions by creating a ZIP file of your code, titled after the
 nvc.exe [directory]
 
 ## Building
-```sh
+```shell
 dotnet build --configuration Release
 ```
 
