@@ -12,7 +12,7 @@ nvc.exe [directory]
 
 ## Building
 ```sh
-dotnet build
+dotnet build --configuration Release
 ```
 
 ## Supported systems
