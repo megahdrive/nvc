@@ -1,5 +1,5 @@
 # nvc
-Version control for the masses
+N(oobas) version control. Version control for the masses. Please don't actually use this, it literally zips your code in a file. Just use 7-zip.
 
 ## Usage
 nvc.exe [directory]
