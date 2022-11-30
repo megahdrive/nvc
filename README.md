@@ -11,4 +11,9 @@ NVC controls your versions by creating a ZIP file of your code, titled after the
 nvc.exe [directory]
 
 ## Building
-This should build on any system, but it's being tested on Windows 11 amd64 and I cant be bothered to test.
+```sh
+dotnet build
+```
+
+## Supported systems
+This *should* build and run fine on any system, but I can't guarantee it and I can't be bothered to test. (Tested on Windows 11, Amd64)
