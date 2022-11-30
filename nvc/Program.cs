@@ -10,7 +10,7 @@ namespace nvc
         public const string NvcVersion = "1.0";
         static void Main(string[] args)
         {
-            Terminal.PrintNvc();
+            Log.PrintNvc();
             Stopwatch stopwatch = Stopwatch.StartNew();
 
             if (args.Length != 0 ) {
@@ -19,7 +19,7 @@ namespace nvc
                 
                 if (arg == "-h" || arg == "--help")
                 {
-                    Terminal.WriteHelp("");
+                    Log.WriteHelp("");
                     Environment.Exit(0);
                 }
 
@@ -31,7 +31,7 @@ namespace nvc
                         arg = Environment.CurrentDirectory + "\\" + arg;
                     } else
                     {
-                        Terminal.Error("Directory does not exist!");
+                        Log.Error("Directory does not exist!");
                         Environment.Exit(1);
                     }
                 }
@@ -41,15 +41,15 @@ namespace nvc
                 {
                     ZipFile.CreateFromDirectory(arg, $@"{now}.zip");
                     stopwatch.Stop();
-                    Terminal.Write($"{now}.zip created in {stopwatch.ElapsedMilliseconds}ms");
+                    Log.Write($"{now}.zip created in {stopwatch.ElapsedMilliseconds}ms");
                 } catch (Exception e)
                 {
-                    Terminal.Error(e.Message);
+                    Log.Error(e.Message);
                     Environment.Exit(1);
                 }
             } else
             {
-                Terminal.Error("You must provide atleast one argument to NVC");
+                Log.Error("You must provide atleast one argument to NVC");
             }
         }
     }
