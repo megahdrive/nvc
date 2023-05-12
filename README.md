@@ -1,5 +1,5 @@
 # nvc
-N(oobas) version control. Version control for the masses.
+N(oobas) version control. Version control for the masses. Please note if you actually want to use version control software like this either consider not doing it or using the [rust port](https://github.com/megahdrive/nvc-rust)
 ### What is it?
 NVC is a meme version control software, designed after my friends' bad version control system.
 ### Why use it?
